@@ -5,38 +5,16 @@
     Layout = "~/Views/Shared/_LayoutMobile.cshtml";
 }
 
-
-@*@Html.DisplayNameFor(model => model.YongHu.YongHuMing)
-@Html.DisplayNameFor(model => model.BiaoTi)
-@Html.DisplayNameFor(model => model.JianYao)
-@Html.DisplayNameFor(model => model.ZhengWenNeiRong)
-@Html.DisplayNameFor(model => model.JianYaoTuPian)
-@Html.DisplayNameFor(model => model.ChuangJianRiQi)
-@Html.DisplayNameFor(model => model.XiuGaiRiQi)
-@Html.DisplayNameFor(model => model.PingLunLiang)
-@Html.DisplayNameFor(model => model.ShouCangLiang)
-@Html.DisplayNameFor(model => model.YueDuLiang)
-
-@Html.DisplayFor(modelItem => item.YongHu.YongHuMing)
-
-@Html.DisplayFor(modelItem => item.BiaoTi)
-@Html.DisplayFor(modelItem => item.JianYao)
-@Html.DisplayFor(modelItem => item.ZhengWenNeiRong)
-@Html.DisplayFor(modelItem => item.JianYaoTuPian)
-@Html.DisplayFor(modelItem => item.ChuangJianRiQi)
-@Html.DisplayFor(modelItem => item.XiuGaiRiQi)
-@Html.DisplayFor(modelItem => item.PingLunLiang)
-@Html.DisplayFor(modelItem => item.ShouCangLiang)
-@Html.DisplayFor(modelItem => item.YueDuLiang)*@
-
-
 <ul class="mui-table-view">
     @foreach (var item in Model)
     {
+        var imgsrc = "../images/" + item.JianYaoTuPian;
+
         <li class="mui-table-view-cell mui-media ">
             <a href="javascript:;">
-                <img class="mui-media-object mui-pull-left" src="../images/yuantiao.jpg">
+                <img class="mui-media-object mui-pull-left" src= @imgsrc>
                 <div class="mui-media-body">
+              
                     <h5 class="mui-font">@Html.DisplayFor(modelItem => item.BiaoTi)</h5>
                     <p class="mui-h mui-ellipsis">@Html.DisplayFor(modelItem => item.JianYao)</p>
                 </div>
