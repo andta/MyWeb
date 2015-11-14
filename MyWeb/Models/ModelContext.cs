@@ -32,6 +32,9 @@ namespace MyWeb.Models
 
         //为您要在模型中包含的每种实体类型都添加 DbSet。
         public virtual DbSet<MyEntity> DbSet_MyEntitie { get; set; }
+        /// <summary>
+        /// 文章数据表的实体模型
+        /// </summary>
         public virtual DbSet<WenZhang> DbSet_WenZhang { get; set; }
         public virtual DbSet<YongHu> DbSet_YongHu { get; set; }
 

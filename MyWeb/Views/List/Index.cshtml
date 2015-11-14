@@ -1,0 +1,51 @@
+﻿@model IEnumerable<MyWeb.Models.WenZhang>
+
+@{
+    ViewBag.Title = "Index1";
+    Layout = "~/Views/Shared/_LayoutMobile.cshtml";
+}
+
+<h2>Index1</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+
+
+
+        @Html.DisplayNameFor(model => model.YongHu.YongHuMing)
+        @Html.DisplayNameFor(model => model.BiaoTi)
+        @Html.DisplayNameFor(model => model.JianYao)
+        @Html.DisplayNameFor(model => model.ZhengWenNeiRong)
+        @Html.DisplayNameFor(model => model.JianYaoTuPian)
+        @Html.DisplayNameFor(model => model.ChuangJianRiQi)
+        @Html.DisplayNameFor(model => model.XiuGaiRiQi)
+        @Html.DisplayNameFor(model => model.PingLunLiang)
+        @Html.DisplayNameFor(model => model.ShouCangLiang)
+        @Html.DisplayNameFor(model => model.YueDuLiang)
+ 
+
+
+    @*@foreach (var item in Model)
+    {
+
+                @Html.DisplayFor(modelItem => item.YongHu.YongHuMing)
+
+                @Html.DisplayFor(modelItem => item.BiaoTi)
+                @Html.DisplayFor(modelItem => item.JianYao)
+                @Html.DisplayFor(modelItem => item.ZhengWenNeiRong)
+                @Html.DisplayFor(modelItem => item.JianYaoTuPian)
+                @Html.DisplayFor(modelItem => item.ChuangJianRiQi)
+                @Html.DisplayFor(modelItem => item.XiuGaiRiQi)
+                @Html.DisplayFor(modelItem => item.PingLunLiang)
+                @Html.DisplayFor(modelItem => item.ShouCangLiang)
+                @Html.DisplayFor(modelItem => item.YueDuLiang)
+
+
+                @Html.ActionLink("Edit", "Edit", new { id = item.ID }) |
+                @Html.ActionLink("Details", "Details", new { id = item.ID }) |
+                @Html.ActionLink("Delete", "Delete", new { id = item.ID })
+           
+    }*@
+
+
