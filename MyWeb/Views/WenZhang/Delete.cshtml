@@ -1,0 +1,106 @@
+﻿@model MyWeb.Models.WenZhang
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>删除</h2>
+
+<h3>确认要删除这条数据吗？</h3>
+<div>
+    <h4>WenZhang</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.YongHu.YongHuMing)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.YongHu.YongHuMing)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.BiaoTi)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.BiaoTi)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.JianYao)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.JianYao)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ZhengWenNeiRong)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ZhengWenNeiRong)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.JianYaoTuPian)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.JianYaoTuPian)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ChuangJianRiQi)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ChuangJianRiQi)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.XiuGaiRiQi)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.XiuGaiRiQi)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PingLunLiang)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PingLunLiang)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ShouCangLiang)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ShouCangLiang)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.YueDuLiang)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.YueDuLiang)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="确认删除" class="btn btn-default" /> 
+            @Html.ActionLink("返回列表", "Index","", new { @class = "btn btn-default" } )
+        </div>
+    }
+</div>
+
+

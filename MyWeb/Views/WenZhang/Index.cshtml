@@ -1,0 +1,83 @@
+﻿@model IEnumerable<MyWeb.Models.WenZhang>
+
+@{
+    ViewBag.Title = "列表主页";
+}
+
+<h2>列表</h2>
+
+<p>
+    @Html.ActionLink("创建", "Create", "", new { @class = "btn btn-default mystyle1" })
+</p>
+<table class="table">
+    <tr class="shenglue">
+        <th>
+            @Html.DisplayNameFor(model => model.YongHuID)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.BiaoTi)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.JianYao)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.JianYaoTuPian)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ChuangJianRiQi)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.XiuGaiRiQi)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.PingLunLiang)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ShouCangLiang)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.YueDuLiang)
+        </th>
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr class="shenglue">
+            <td>
+                @Html.DisplayFor(modelItem => item.YongHu.YongHuMing)
+            </td>
+            <td class="mystyle3 shenglue">
+                @Html.DisplayFor(modelItem => item.BiaoTi)
+            </td>
+            <td class="mystyle4 shenglue">
+                @Html.DisplayFor(modelItem => item.JianYao)
+            </td>
+
+            <td class="mystyle2 shenglue">
+                @Html.DisplayFor(modelItem => item.JianYaoTuPian)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ChuangJianRiQi, "DateTimeTemplate")
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.XiuGaiRiQi, "DateTimeTemplate")
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PingLunLiang)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ShouCangLiang)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.YueDuLiang)
+            </td>
+            <td>
+                @Html.ActionLink("编辑", "Edit", new { id = item.ID }) |
+                @Html.ActionLink("详细", "Details", new { id = item.ID }) |
+                @Html.ActionLink("删除", "Delete", new { id = item.ID })
+            </td>
+        </tr>
+    }
+
+</table>
