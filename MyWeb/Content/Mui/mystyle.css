@@ -1,0 +1,17 @@
+﻿/*图片*/
+.mui-table-view .mui-media-object {
+    line-height: 75px;
+    max-width: 90px;
+    min-width: 90px;
+    max-height: 75px;
+    min-height: 75px;
+    height: 75px;
+    border: 1px solid #DADADA;
+    text-align: center;
+    margin: -4px 0;
+}
+
+.mui-font {
+    color: #787878;
+    font-weight: bold;
+}
