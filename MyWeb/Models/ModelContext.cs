@@ -25,7 +25,7 @@ namespace MyWeb.Models
             //策略三：模型更改时重新创建数据库
             //Database.SetInitializer<ModelContext>(new DropCreateDatabaseIfModelChanges<ModelContext>());
             //策略四：从不创建数据库
-            Database.SetInitializer<ModelContext>(null);
+            //Database.SetInitializer<ModelContext>(null);
             //策略五：创建初始化数据
             //Database.SetInitializer<ModelContext>(new CompanyInitializer());
         }
