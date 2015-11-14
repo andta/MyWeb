@@ -113,6 +113,9 @@
     <Content Include="fonts\glyphicons-halflings-regular.ttf" />
     <Content Include="fonts\glyphicons-halflings-regular.eot" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
+    <Content Include="images\1.jpg" />
+    <Content Include="images\2.jpg" />
+    <Content Include="images\3.jpg" />
     <Content Include="images\shuijiao.jpg" />
     <Content Include="images\yuantiao.jpg" />
     <Content Include="Scripts\bootstrap.js" />
