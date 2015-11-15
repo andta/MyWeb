@@ -12,11 +12,18 @@
 }
 
 /*重写字体*/
-.mui-font {
+.my-bt {
     font-size: 16px;
     font-weight: 500;
-    color: #84a9e0;
+    color: #909090;
     font-weight: bold;
+}
+
+/*收藏，阅读，评论样式*/
+.my-sc {
+    margin-right: 20px;
+    color:#84a9e0;
+    font-size: 12px;
 }
 /*重写列表低边框右侧没有缩进问题*/
 .mui-table-view-cell:after {

@@ -15,13 +15,13 @@
                 <img class="mui-media-object mui-pull-left" src=@imgsrc>
                 <div class="mui-media-body">
 
-                    <h5 class="mui-font">@Html.DisplayFor(modelItem => item.BiaoTi)</h5>
+                    <h5 class="my-bt">@Html.DisplayFor(modelItem => item.BiaoTi)</h5>
                     <p class="mui-h mui-ellipsis">@Html.DisplayFor(modelItem => item.JianYao)</p>
                 </div>
                 <div class="mui-media-body mui-bottom">
-                    <span class="mui-h6" style="margin-right:20px; color:brown; "> 收藏:[ @Html.DisplayFor(modelItem => item.ShouCangLiang) ] </span>
-                    <span class="mui-h6" style="margin-right:20px; color:brown; "> 阅读:[ @Html.DisplayFor(modelItem => item.YueDuLiang) ] </span>
-                    <span class="mui-h6" style="margin-right:20px; color:brown; "> 评论:[ @Html.DisplayFor(modelItem => item.PingLunLiang) ] </span>
+                    <span class="mui-h6 my-sc"> 收藏:[ @Html.DisplayFor(modelItem => item.ShouCangLiang) ] </span>
+                    <span class="mui-h6 my-sc"> 阅读:[ @Html.DisplayFor(modelItem => item.YueDuLiang) ] </span>
+                    <span class="mui-h6 my-sc"> 评论:[ @Html.DisplayFor(modelItem => item.PingLunLiang) ] </span>
                 </div>
             </a>
 
