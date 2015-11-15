@@ -127,6 +127,7 @@
     <Content Include="fonts\glyphicons-halflings-regular.ttf" />
     <Content Include="fonts\glyphicons-halflings-regular.eot" />
     <Content Include="App_Data\AndTaDatabase.db" />
+    <None Include="Properties\PublishProfiles\web发布配置.pubxml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="images\1.jpg" />
     <Content Include="images\2.jpg" />
