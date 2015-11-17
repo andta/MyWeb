@@ -5,31 +5,32 @@
     Layout = "~/Views/Shared/_LayoutMobile.cshtml";
 }
 
-<ul class="mui-table-view">
-    @foreach (var item in Model)
-    {
-        var imgsrc = "../images/" + item.JianYaoTuPian;
 
-        <li class="mui-table-view-cell mui-media ">
-            <a href="javascript:;">
-                <img class="mui-media-object mui-pull-left" src=@imgsrc>
-                <div class="mui-media-body">
+    <ul class="mui-table-view">
+        @foreach (var item in Model)
+        {
+            var imgsrc = "../images/" + item.JianYaoTuPian;
 
-                    <h5 class="my-bt">@Html.DisplayFor(modelItem => item.BiaoTi)</h5>
-                    <p class="mui-h mui-ellipsis">@Html.DisplayFor(modelItem => item.JianYao)</p>
-                </div>
-                <div class="mui-media-body mui-bottom">
-                    <span class="mui-h6 my-sc"> 收藏:[ @Html.DisplayFor(modelItem => item.ShouCangLiang) ] </span>
-                    <span class="mui-h6 my-sc"> 阅读:[ @Html.DisplayFor(modelItem => item.YueDuLiang) ] </span>
-                    <span class="mui-h6 my-sc"> 评论:[ @Html.DisplayFor(modelItem => item.PingLunLiang) ] </span>
-                </div>
-            </a>
 
-        </li>
-    }
-</ul>
-<div class="list_loading">
-    <i></i>
-    <span>努力加载中...</span>
-</div>
+            <li class="mui-table-view-cell mui-media ">
+                <a href="javascript:;">
+                    <img class="mui-media-object mui-pull-left" src=@imgsrc>
+                    <div class="mui-media-body">
+                        <h5 class="my-css-bt-color">@Html.DisplayFor(modelItem => item.BiaoTi)</h5>
+                        <p class="mui-h mui-ellipsis">@Html.DisplayFor(modelItem => item.JianYao)</p>
+                    </div>
+                    <div class="mui-media-body mui-bottom  mui-pull-right">
+                        <span class="mui-h6 my-css-xx-font"> 收藏:[ @Html.DisplayFor(modelItem => item.ShouCangLiang) ] </span>
+                        <span class="mui-h6 my-css-xx-font"> 阅读:[ @Html.DisplayFor(modelItem => item.YueDuLiang) ] </span>
+                        <span class="mui-h6 my-css-xx-font"> 评论:[ @Html.DisplayFor(modelItem => item.PingLunLiang) ] </span>
+                    </div>
+                </a>
 
+            </li>
+        }
+    </ul>
+
+    <div class="list_loading">
+        <i></i>
+        <span>努力加载中...</span>
+    </div>

@@ -121,12 +121,9 @@
     <Content Include="Content\Mui\mui.min.css" />
     <Content Include="Content\Mui\mystyle.css" />
     <Content Include="Content\Site.css" />
-    <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
-    <Content Include="fonts\glyphicons-halflings-regular.woff" />
-    <Content Include="fonts\glyphicons-halflings-regular.ttf" />
-    <Content Include="fonts\glyphicons-halflings-regular.eot" />
     <Content Include="App_Data\AndTaDatabase.db" />
+    <Content Include="fonts\mui.ttf" />
     <None Include="Properties\PublishProfiles\web发布配置.pubxml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="images\1.jpg" />
