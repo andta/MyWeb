@@ -5,12 +5,16 @@
     Layout = "~/Views/Shared/_LayoutMobile.cshtml";
 }
 
+<ul id="DataList">
+    @{Html.RenderAction("ListPanel", "List", new { skipCount = 3, takeCount = 4 });}
+</ul>
 
-    <ul class="mui-table-view">
+
+    @*<ul class="mui-table-view">
         @foreach (var item in Model)
         {
-            var imgsrc = "../images/" + item.JianYaoTuPian;
-
+            var imgsrc = "http://192.168.1.83/images/" + item.JianYaoTuPian;
+            //var imgsrc = "../images/" + item.JianYaoTuPian;
 
             <li class="mui-table-view-cell mui-media ">
                 <a href="javascript:;">
@@ -18,17 +22,22 @@
                     <div class="mui-media-body">
                         <h5 class="my-css-bt-color">@Html.DisplayFor(modelItem => item.BiaoTi)</h5>
                         <p class="mui-h mui-ellipsis">@Html.DisplayFor(modelItem => item.JianYao)</p>
-                    </div>
-                    <div class="mui-media-body mui-bottom  mui-pull-right">
-                        <span class="mui-h6 my-css-xx-font"> 收藏:[ @Html.DisplayFor(modelItem => item.ShouCangLiang) ] </span>
-                        <span class="mui-h6 my-css-xx-font"> 阅读:[ @Html.DisplayFor(modelItem => item.YueDuLiang) ] </span>
-                        <span class="mui-h6 my-css-xx-font"> 评论:[ @Html.DisplayFor(modelItem => item.PingLunLiang) ] </span>
+                    </div>    
+                    <div class="mui-media-body mui-bottom  mui-pull-right my-css-xx-font">
+                        <span class="iconfont icon-yulan">
+                            <span class="my-css-tb-font">@Html.DisplayFor(modelItem => item.YueDuLiang)</span>
+                        </span>
+                        <span class="iconfont icon-huifu">
+                            <span class="my-css-tb-font">@Html.DisplayFor(modelItem => item.PingLunLiang)</span>
+                        </span>
+                        <span class="iconfont icon-xin">
+                            <span class="my-css-tb-font">@Html.DisplayFor(modelItem => item.ShouCangLiang)</span>
+                        </span>
                     </div>
                 </a>
-
             </li>
         }
-    </ul>
+    </ul>*@
 
     <div class="list_loading">
         <i></i>

@@ -1,0 +1,12 @@
+﻿@model IEnumerable<MyWeb.Models.WenZhang>
+
+
+@foreach (var item in Model) {
+    
+    <div style="background-color:aquamarine">
+        @Html.DisplayFor(modelItem => item.BiaoTi)
+        @Html.DisplayFor(modelItem => item.JianYao)
+    </div>
+         
+    <br />
+}

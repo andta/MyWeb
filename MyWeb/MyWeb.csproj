@@ -113,17 +113,22 @@
     <Content Include="App_Data\AndTaDatabase_log.ldf">
       <DependentUpon>AndTaDatabase.mdf</DependentUpon>
     </Content>
-    <Content Include="Content\bootstrap.css" />
-    <Content Include="Content\bootstrap.min.css" />
-    <Content Include="Content\Mui\icon-spin-s.png" />
-    <Content Include="Content\Mui\icons.png" />
-    <Content Include="Content\Mui\mui.css" />
-    <Content Include="Content\Mui\mui.min.css" />
-    <Content Include="Content\Mui\mystyle.css" />
-    <Content Include="Content\Site.css" />
+    <Content Include="css\bootstrap.css" />
+    <Content Include="css\bootstrap.min.css" />
+    <Content Include="css\icon-spin-s.png" />
+    <Content Include="css\iconfont.css" />
+    <Content Include="css\icons.png" />
+    <Content Include="css\mui.css" />
+    <Content Include="css\mui.min.css" />
+    <Content Include="css\mystyle.css" />
+    <Content Include="css\Site.css" />
+    <Content Include="fonts\iconfont.svg" />
     <Content Include="Global.asax" />
     <Content Include="App_Data\AndTaDatabase.db" />
     <Content Include="fonts\mui.ttf" />
+    <Content Include="fonts\iconfont.ttf" />
+    <Content Include="fonts\iconfont.eot" />
+    <Content Include="fonts\iconfont.woff" />
     <None Include="Properties\PublishProfiles\web发布配置.pubxml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="images\1.jpg" />
@@ -168,6 +173,7 @@
     <Content Include="Scripts\jquery-1.10.2.min.map" />
     <Content Include="Views\List\Index.cshtml" />
     <Content Include="Views\Shared\_LayoutMobile.cshtml" />
+    <Content Include="Views\List\ListPanel.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
