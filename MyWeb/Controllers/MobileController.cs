@@ -32,7 +32,7 @@ namespace MyWeb.Controllers
         {
             return View();
         }
-        // GET: Default/Details/5
+        // GET: Mobile/AboutInfo
         //关于信息页面
         public ActionResult AboutInfo()
         {
