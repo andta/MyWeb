@@ -3,7 +3,7 @@
 {
     var imgsrc = "http://192.168.1.83/images/" + item.JianYaoTuPian;
     <li class="mui-table-view-cell mui-media ">
-        <a href="javascript:;">
+        <a href="javascript:;"  id = @item.ID>
             <img class="mui-media-object mui-pull-left" src=@imgsrc>
             <div class="mui-media-body">
                 <h5 class="my-css-bt-color">@Html.DisplayFor(modelItem => item.BiaoTi)</h5>
