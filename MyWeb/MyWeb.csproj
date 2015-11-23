@@ -175,6 +175,7 @@
     <Content Include="Views\Shared\_LayoutMobile.cshtml" />
     <Content Include="Views\Mobile\ListPanel.cshtml" />
     <Content Include="Views\Mobile\AboutInfo.cshtml" />
+    <Content Include="Views\Mobile\Details.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

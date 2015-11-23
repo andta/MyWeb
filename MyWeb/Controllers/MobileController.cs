@@ -4,7 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 using MyWeb.Models;
-
+using System.Net;
 
 namespace MyWeb.Controllers
 {
@@ -26,17 +26,27 @@ namespace MyWeb.Controllers
             var list = m.ToList().Skip(skipCount).Take(takeCount).ToList();
             return PartialView(list);
         }
-        // GET: Default/Details/5
-        //详细内容
-        public ActionResult Details(int id)
-        {
-            return View();
-        }
         // GET: Mobile/AboutInfo
         //关于信息页面
         public ActionResult AboutInfo()
         {
             return View();
+        }
+
+        // GET: Mobile/Details/5
+        //文章详细页面
+        public ActionResult Details(int? id)
+        {
+            if (id == null)
+            {
+                return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
+            }
+            WenZhang wenZhang = db.DbSet_WenZhang.Find(id);
+            if (wenZhang == null)
+            {
+                return HttpNotFound();
+            }
+            return View(wenZhang);
         }
 
     }

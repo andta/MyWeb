@@ -1,0 +1,8 @@
+﻿@model IEnumerable<MyWeb.Models.WenZhang>
+@{Layout = null;}
+<div class="mui-content-padded">
+    @foreach (var item in Model)
+    {
+        <span class="my-css-tb-font">@Html.DisplayFor(modelItem => item.ZhengWenNeiRong)</span>
+    }
+</div>
