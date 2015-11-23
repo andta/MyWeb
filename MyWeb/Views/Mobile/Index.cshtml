@@ -10,6 +10,8 @@
     @{Html.RenderAction("ListPanel", "List", new { skipCount = 3, takeCount = 4 });}
 </ul>*@
 
+@Html.ActionLink("详细", "Details", new { id = 1 }) |
+
 <ul class="mui-table-view">
     @foreach (var item in Model)
     {

@@ -37,6 +37,7 @@ namespace MyWeb.Controllers
         //文章详细页面
         public ActionResult Details(int? id)
         {
+            Console.WriteLine("aaaaaaaaaaaaa"+ id);
             if (id == null)
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
@@ -46,7 +47,7 @@ namespace MyWeb.Controllers
             {
                 return HttpNotFound();
             }
-            return View(wenZhang);
+            return PartialView(wenZhang);
         }
 
     }
