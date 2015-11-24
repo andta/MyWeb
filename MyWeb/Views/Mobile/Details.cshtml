@@ -1,7 +1,2 @@
 ﻿@model MyWeb.Models.WenZhang
-
-<div>
-    <p>
-        @Html.DisplayFor(model => model.ZhengWenNeiRong)
-    </p>
-</div>
+@Html.Raw(@Model.ZhengWenNeiRong)
